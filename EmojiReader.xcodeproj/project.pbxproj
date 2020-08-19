@@ -11,9 +11,11 @@
 		511E01BF24ED7FFA00E37953 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511E01BE24ED7FFA00E37953 /* SceneDelegate.swift */; };
 		511E01C124ED7FFA00E37953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511E01C024ED7FFA00E37953 /* ViewController.swift */; };
 		511E01C424ED7FFA00E37953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511E01C224ED7FFA00E37953 /* Main.storyboard */; };
-		511E01C624ED7FFA00E37953 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511E01C524ED7FFA00E37953 /* ContentView.swift */; };
 		511E01C824ED7FFB00E37953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511E01C724ED7FFB00E37953 /* Assets.xcassets */; };
 		511E01CB24ED7FFB00E37953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511E01C924ED7FFB00E37953 /* LaunchScreen.storyboard */; };
+		511E01D324ED825D00E37953 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511E01D224ED825D00E37953 /* EmojiTableViewController.swift */; };
+		511E01D524ED961100E37953 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511E01D424ED961100E37953 /* EmojiTableViewCell.swift */; };
+		511E01D724ED996E00E37953 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511E01D624ED996E00E37953 /* EmojiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +24,12 @@
 		511E01BE24ED7FFA00E37953 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		511E01C024ED7FFA00E37953 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		511E01C324ED7FFA00E37953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		511E01C524ED7FFA00E37953 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		511E01C724ED7FFB00E37953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		511E01CA24ED7FFB00E37953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		511E01CC24ED7FFB00E37953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		511E01D224ED825D00E37953 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		511E01D424ED961100E37953 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		511E01D624ED996E00E37953 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 				511E01BE24ED7FFA00E37953 /* SceneDelegate.swift */,
 				511E01C024ED7FFA00E37953 /* ViewController.swift */,
 				511E01C224ED7FFA00E37953 /* Main.storyboard */,
-				511E01C524ED7FFA00E37953 /* ContentView.swift */,
+				511E01D624ED996E00E37953 /* EmojiModel.swift */,
+				511E01D224ED825D00E37953 /* EmojiTableViewController.swift */,
+				511E01D424ED961100E37953 /* EmojiTableViewCell.swift */,
 				511E01C724ED7FFB00E37953 /* Assets.xcassets */,
 				511E01C924ED7FFB00E37953 /* LaunchScreen.storyboard */,
 				511E01CC24ED7FFB00E37953 /* Info.plist */,
@@ -142,8 +148,10 @@
 			files = (
 				511E01C124ED7FFA00E37953 /* ViewController.swift in Sources */,
 				511E01BD24ED7FFA00E37953 /* AppDelegate.swift in Sources */,
-				511E01C624ED7FFA00E37953 /* ContentView.swift in Sources */,
+				511E01D724ED996E00E37953 /* EmojiModel.swift in Sources */,
+				511E01D524ED961100E37953 /* EmojiTableViewCell.swift in Sources */,
 				511E01BF24ED7FFA00E37953 /* SceneDelegate.swift in Sources */,
+				511E01D324ED825D00E37953 /* EmojiTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
