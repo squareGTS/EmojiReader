@@ -16,19 +16,15 @@ class EmojiTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.title = "Emoji Reader"
         self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
     
+    // when you press save button
     @IBAction func unwindSegue(segue: UIStoryboardSegue){
         guard segue.identifier == "saveSegue" else { return }
         let sourceVC = segue.source as! NewEmojiTableViewController
         let emoji = sourceVC.emoji
-        
         
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             objects[selectedIndexPath.row] = emoji
@@ -82,7 +78,7 @@ class EmojiTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-    
+    // Move row
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -93,11 +89,13 @@ class EmojiTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    // Left swipe action
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let done = doneAction(at: indexPath)
         let favourite = favouriteAction(at: indexPath)
         return UISwipeActionsConfiguration(actions: [done, favourite])
     }
+    
     
     func doneAction(at indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .destructive, title: "Done") { (action, view, completion) in

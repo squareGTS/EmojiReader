@@ -23,6 +23,10 @@ class NewEmojiTableViewController: UITableViewController {
         updateSaveButtonState()
     }
     
+    @IBAction func textChanged(_ sender: UITextField) {
+        updateSaveButtonState()
+    }
+    
     private func updateSaveButtonState() {
         let emojiText = emojiTextField.text ?? ""
         let nameText = nameTextField.text ?? ""
@@ -35,10 +39,6 @@ class NewEmojiTableViewController: UITableViewController {
         emojiTextField.text = emoji.emoji
         nameTextField.text = emoji.name
         descriptionTextField.text = emoji.description
-    }
-    
-    @IBAction func textChanged(_ sender: UITextField) {
-        updateSaveButtonState()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
